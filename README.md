@@ -15,8 +15,7 @@ This project demonstrates automated testing with TestNG, Maven, and Selenium Web
         └── java/
             └── com/
                 └── testautomation/
-                    ├── tests/
-                    │   ├── LoginTest.java      # Web UI tests
+                    ├── tests
                     │   ├── CalculatorTest.java # Unit tests
                     │   ├── StringTest.java     # String manipulation tests
                     │   └── ArrayTest.java      # Array manipulation tests
