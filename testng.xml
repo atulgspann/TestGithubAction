@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG Maven Suite" verbose="1">
+    <test name="All Tests">
+        <classes>
+            <class name="com.testautomation.tests.LoginTest"/>
+            <class name="com.testautomation.tests.CalculatorTest"/>
+            <class name="com.testautomation.tests.StringTest"/>
+            <class name="com.testautomation.tests.ArrayTest"/>
+        </classes>
+    </test>
+</suite> 
