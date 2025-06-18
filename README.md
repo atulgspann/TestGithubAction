@@ -26,13 +26,11 @@ This project demonstrates automated testing with TestNG, Maven, and Selenium Web
 ## Test Groups
 
 ### Smoke Tests
-- **LoginTest**: `testSuccessfulLogin()` - Tests successful login functionality
 - **CalculatorTest**: `testAddition()`, `testSubtraction()` - Basic arithmetic operations
 - **StringTest**: `testStringConcatenation()`, `testStringLength()` - Basic string operations
 - **ArrayTest**: `testArrayCreationAndAccess()`, `testArraySorting()` - Basic array operations
 
 ### Regression Tests
-- **LoginTest**: `testFailedLoginWithInvalidCredentials()`, `testLoginFormValidation()` - Login error scenarios
 - **CalculatorTest**: `testMultiplication()`, `testDivision()`, `testDivisionByZero()`, `testNegativeNumbers()` - Advanced arithmetic
 - **StringTest**: `testStringToUpperCase()`, `testStringToLowerCase()`, `testStringContains()`, `testStringTrim()` - String manipulation
 - **ArrayTest**: `testArraySearch()`, `testArrayCopy()`, `testArrayFill()`, `testArrayEquality()` - Array operations
@@ -75,13 +73,12 @@ mvn test -Dgroups=smoke,regression
 
 #### Run specific test class
 ```bash
-mvn test -Dtest=LoginTest
 mvn test -Dtest=CalculatorTest
 ```
 
 #### Run specific test method
 ```bash
-mvn test -Dtest=LoginTest#testSuccessfulLogin
+mvn test -Dtest=CalculatorTest#testAddition
 ```
 
 ### TestNG XML Files
