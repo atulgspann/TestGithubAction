@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Greetings
-        run: echo "${{ inputs.name }}"
+      - name: PrintName
+        run: echo "My name is ${{ inputs.name }}"
     
