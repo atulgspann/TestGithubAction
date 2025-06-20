@@ -1,4 +1,4 @@
-name: Simulate Stages
+name: Testing Github Action
 
 on:
   workflow_dispatch:
