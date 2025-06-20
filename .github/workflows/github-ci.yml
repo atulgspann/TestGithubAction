@@ -2,7 +2,7 @@ name: Testing Github Action
 
 on:
   schedule:
-    - cron: '36 10 * * *'  # 10:36 UTC = 16:06 IST
+    - '46 10 * * *'   # 10:46 UTC = 16:16 IST
   workflow_dispatch:         # still allows manual triggering
 
 jobs:
