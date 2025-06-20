@@ -1,17 +1,18 @@
-name: Every 5 Minutes Cron
+name: Github Action by Atul
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'   # every 5 minutes UTC
-  workflow_dispatch:         # optional manual trigger
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Name'
+        type: string
+        default: 'defaultValue'
 
 jobs:
-  repeat-job:
+  manual:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Print time
-        run: |
-          echo "UTC time:"
-          date -u
-          echo "IST time:"
-          TZ=Asia/Kolkata date
+      - name: Greetings
+        run: echo "${{ inputs.name }}"
+    
