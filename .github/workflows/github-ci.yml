@@ -1,7 +1,9 @@
-name: Github Action by Atul
+name: ScheduleJob by Atul
 
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: '00 01 * * *'     # 5:22 PM IST
+  workflow_dispatch:          # manual trigger
     inputs:
       name:
         description: 'Name'
