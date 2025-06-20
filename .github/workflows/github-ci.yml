@@ -9,12 +9,16 @@ on:
         description: 'Name'
         type: string
         default: 'defaultValue'
+      lastname:
+        description: 'LastName'
+        type: string
+        default: 'defaultValue'
 
 jobs:
   manual:
     runs-on: ubuntu-latest
 
     steps:
-      - name: PrintName
-        run: echo "My name is ${{ inputs.name }}"
+      - name: Print Full Name
+        run: echo "My name is ${{ inputs.name inputs.lastname }}"
     
