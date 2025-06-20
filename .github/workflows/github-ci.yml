@@ -1,7 +1,9 @@
 name: Testing Github Action
 
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: '36 10 * * *'  # 10:36 UTC = 16:06 IST
+  workflow_dispatch:         # still allows manual triggering
 
 jobs:
   build:
