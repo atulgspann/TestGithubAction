@@ -9,11 +9,11 @@ on:
         description: 'Name'
         type: string
         required: true
-        default: 'defaultValue'
+        default: 'defaultName'
       lastname:
         description: 'LastName'
         type: string
-        default: 'defaultValue'
+        default: 'defaultLastName'
       gender:
         description: 'Gender'
         type: choice
