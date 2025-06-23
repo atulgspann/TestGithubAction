@@ -39,12 +39,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17' # Change this if your project uses a different version
+          distribution: 'temurin'
+
       - name: Execute Automation
         run: |
           echo "Executing automation only printing this statement"
           echo "Executing smoke suite"
-          mvn -P "smoke"
+          mvn -P smoke clean test
           echo "Execution completed."
-
-        
-    
