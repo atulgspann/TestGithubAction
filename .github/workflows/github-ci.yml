@@ -52,5 +52,5 @@ jobs:
         run: |
           echo "Executing automation only printing this statement"
           echo "Executing smoke suite"
-          mvn -P smoke clean test
+          mvn -P smoke test
           echo "Execution completed."
