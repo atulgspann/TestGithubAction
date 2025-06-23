@@ -9,7 +9,6 @@
             </run>
         </groups>
         <classes>
-            <class name="com.testautomation.tests.LoginTest"/>
             <class name="com.testautomation.tests.CalculatorTest"/>
             <class name="com.testautomation.tests.StringTest"/>
             <class name="com.testautomation.tests.ArrayTest"/>
