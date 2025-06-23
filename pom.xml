@@ -66,12 +66,6 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <properties>
-                        <property>
-                            <name>listener</name>
-                            <value>com.testautomation.reports.CustomReportListener</value>
-                        </property>
-                    </properties>
                 </configuration>
             </plugin>
 
@@ -104,12 +98,6 @@
                             <suiteXmlFiles>
                                 <suiteXmlFile>testng-smoke.xml</suiteXmlFile>
                             </suiteXmlFiles>
-                            <properties>
-                                <property>
-                                    <name>listener</name>
-                                    <value>com.testautomation.reports.CustomReportListener</value>
-                                </property>
-                            </properties>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -131,12 +119,6 @@
                             <suiteXmlFiles>
                                 <suiteXmlFile>testng-regression.xml</suiteXmlFile>
                             </suiteXmlFiles>
-                            <properties>
-                                <property>
-                                    <name>listener</name>
-                                    <value>com.testautomation.reports.CustomReportListener</value>
-                                </property>
-                            </properties>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -158,12 +140,6 @@
                             <suiteXmlFiles>
                                 <suiteXmlFile>testng-all.xml</suiteXmlFile>
                             </suiteXmlFiles>
-                            <properties>
-                                <property>
-                                    <name>listener</name>
-                                    <value>com.testautomation.reports.CustomReportListener</value>
-                                </property>
-                            </properties>
                         </configuration>
                     </plugin>
                 </plugins>
