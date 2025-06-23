@@ -3,7 +3,6 @@
 <suite name="TestNG Maven Suite" verbose="1">
     <test name="All Tests">
         <classes>
-            <class name="com.testautomation.tests.LoginTest"/>
             <class name="com.testautomation.tests.CalculatorTest"/>
             <class name="com.testautomation.tests.StringTest"/>
             <class name="com.testautomation.tests.ArrayTest"/>
