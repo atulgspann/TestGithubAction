@@ -40,7 +40,11 @@ jobs:
 
     steps:
       - name: Execute Automation
-        run: echo "Executing automation only printing this statement"
+        run: |
+          echo "Executing automation only printing this statement"
+          echo "Executing smoke suite"
+          mvn -P "smoke"
+          echo "Execution completed."
 
         
     
